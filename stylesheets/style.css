@@ -2750,7 +2750,11 @@ fieldset {
 }
 
 .contact-us .contact-us-inner .widget-tfimage-item .image-inner {
-  background: #b0cee276;
+  background: #1a2730;
+}
+
+.contact-us .contact-us-inner .widget-tfimage-item .image-inner img{
+  filter: invert(1);
 }
 
 .contact-us .contact-us-box {
