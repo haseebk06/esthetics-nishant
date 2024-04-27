@@ -9,6 +9,7 @@ html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: #45586c;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -335,7 +337,7 @@ input[type="color"],
 #mainnav ul.sub-menu > li:hover a,
 #mainnav > ul.menu > li.current-menu-item > a,
 #mainnav ul.sub-menu > li.current-item a {
-  color: #b0cee2;
+  color: #e95d2c;
 }
 
 #mainnav ul.sub-menu {
@@ -410,8 +412,8 @@ input[type="color"],
 
 .header-wrap .email-info .icon img,
 .header-wrap .phone-info .icon i {
-  color: #b0cee2;
-  background: #b0cee289;
+  color: #e95d2c;
+  background: #e95e2c75;
   padding: 11px;
   font-size: 18px;
   border-radius: 20px;
@@ -991,7 +993,7 @@ input[type="color"],
   height: 22px;
   text-align: center;
   margin-bottom: 10px;
-  background-color: #45586c;
+  background-color: #a63e1b;
   color: #fff;
   font-family: "Cormorant Upright", serif;
   font-size: 16px;
@@ -1007,7 +1009,7 @@ input[type="color"],
   height: 12px;
   right: -10px;
   bottom: 0;
-  background-color: #45586c;
+  background-color: #a63e1b;
 }
 
 .footer-content .About-us .date {
@@ -1018,7 +1020,7 @@ input[type="color"],
 }
 
 .footer-content .About-us .date .day {
-  color: #45586c;
+  color: #e95d2c;
 }
 
 .footer-content .About-us .date .day:last-child {
@@ -1107,7 +1109,7 @@ input[type="color"],
 }
 
 .footer-bottom .zoyot p span {
-  color: #45586c;
+  color: #e95d2c;
 }
 
 .footer-bottom .text {
@@ -1146,7 +1148,7 @@ input[type="color"],
 }
 
 .footer-bottom .icons i::before {
-  background: rgba(255, 255, 255, 0.07);
+  background: #a63e1b;
   padding: 13px 13px;
   border-radius: 20px;
   color: #fff;
@@ -1824,7 +1826,7 @@ fieldset {
 
 .page-title-home .swiper-slide .page-title-container h4 {
   font-family: "Cormorant Upright", serif;
-  color: #b0cee2;
+  color: #e95d2c;
   font-size: 18px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -2079,6 +2081,7 @@ fieldset {
 /* portfolio */
 .portfolio .widget-blog-slide .heading h3 {
   margin-left: -8px;
+  background: #a63e1b;
 }
 
 .home-2 .portfolio .swiper-slide {
@@ -2514,6 +2517,11 @@ fieldset {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+}
+
+.portfolio-1{
+  background: #424048;
+  padding-bottom: 120px;
 }
 
 /* portfolio-1 portfolio-2 page */
