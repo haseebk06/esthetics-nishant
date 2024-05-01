@@ -1146,10 +1146,10 @@ button:active {
 .widget-wrap-team .image-team img {
     transition: ease-out 0.3s;
 }
-
+/* 
 .widget-wrap-team:hover .image-team img {
     transform: rotate(5deg) scale(1.2);
-}
+} */
 
 .widget-wrap-team .content h3 {
     font-family: 'Cormorant Upright', serif;
