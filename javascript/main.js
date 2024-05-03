@@ -93,6 +93,7 @@ var swiper2 = function(){
     effect: 'slide',
     slidesPerView: 1,
     spaceBetween:10,
+    autoPlay:true,
   
     pagination: {
       el: '.swiper-pagination',
