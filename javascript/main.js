@@ -1,24 +1,3 @@
-
-/*
-
-  headerFixed
-  showsearch
-  btnmenu
-  dropdown
-  swiper1
-  swiper2
-  swiper3
-  swiper4
-  swiper5
-  gallery
-  accordion
-  goTop
-  counter
-  filter
-  preload
-
-*/
-
 ;(function($) {
 
   'use strict'
@@ -113,7 +92,7 @@ var swiper2 = function(){
     direction: 'horizontal',
     effect: 'slide',
     slidesPerView: 1,
-    spaceBetween:30,
+    spaceBetween:10,
   
     pagination: {
       el: '.swiper-pagination',
@@ -125,7 +104,7 @@ var swiper2 = function(){
         slidesPerView:2
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       }
     }
   
