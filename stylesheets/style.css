@@ -1100,7 +1100,7 @@ input[type="color"],
   display: flex;
 }
 
-.footer-bottom .zoyot p {
+.footer-bottom .nishant p {
   font-family: "Cormorant Upright", serif;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
@@ -1108,7 +1108,15 @@ input[type="color"],
   margin: 10px 0 0 0;
 }
 
-.footer-bottom .zoyot p span {
+.footer-bottom .credits p {
+  font-family: "Cormorant Upright", serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 30px;
+  margin: 10px 0 0 0;
+}
+
+.footer-bottom .nishant p a {
   color: #e95d2c;
 }
 
@@ -1144,7 +1152,7 @@ input[type="color"],
 }
 
 .footer-bottom .icons {
-  justify-content: end;
+  justify-content: center;
 }
 
 .footer-bottom .icons i::before {
@@ -2708,8 +2716,18 @@ fieldset {
   background-image: url(../images/page-title/contact-us.jpg);
 }
 
+.personal-training .page-title {
+  background-image: url(../images/our-project/personal-tarining.jpeg);
+}
+
 /* main-content */
 .contact-us .contact-us-content {
+  width: 68.5%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.personal-training .contact-us-content {
   width: 68.5%;
   max-width: 1170px;
   margin: auto;
