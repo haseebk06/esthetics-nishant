@@ -2736,7 +2736,7 @@ fieldset {
 
 .counselling .page-title {
   background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/counselling.jpeg');
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/consultation.jpg');
   background-position: center top;
   height: 80vh;
 }
