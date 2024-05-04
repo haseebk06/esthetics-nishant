@@ -992,7 +992,7 @@ input[type="color"],
   width: 165px;
   height: 22px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   background-color: #a63e1b;
   color: #fff;
   font-family: "Cormorant Upright", serif;
@@ -2007,8 +2007,6 @@ fieldset {
 }
 
 .home-1 .widget-fitness-sports {
-  padding-bottom: 61px;
-  margin-bottom: 100px;
   border-bottom: 1px solid rgba(24, 24, 24, 0.07);
 }
 
@@ -2717,7 +2715,30 @@ fieldset {
 }
 
 .personal-training .page-title {
-  background-image: url(../images/our-project/personal-tarining.jpeg);
+  background-image:  
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/personal-training.jpeg');
+}
+
+.online-training .page-title {
+  background-image:  
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/online-training.jpeg');
+}
+
+.contest-prepration .page-title {
+  background-image:  
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/contest-prepration.jpeg');
+}
+
+.diet-supplement-plans .page-title {
+  background-image:  
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/diet-supplement-plan.jpeg');
+}
+
+.counselling .page-title {
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/counselling.jpeg');
+  background-position: center top;
+  height: 80vh;
 }
 
 /* main-content */
@@ -2823,4 +2844,48 @@ fieldset {
 
 .contact-us .contact-us-box form button {
   padding: 15px 26px;
+}
+
+.contest-prepration-packages {
+  padding-bottom: 5rem;
+  background: #1a2730;
+}
+
+.contest-prepration-packages * {
+  color: #fff;
+}
+
+.contest-prepration-packages h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 36px;
+  color: #fff;
+  padding: 8rem 0 1rem 0;
+}
+
+.contest-prepration-packages h3 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 36px;
+  color: #fff;
+}
+
+.contest-prepration-packages p {
+  font-family: "Inter", serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.counselling h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 62px;
+  text-align: left;
+  padding: 0 5rem;
+  color: #fff;
+}
+
+.counselling p {
+  font-family: "Inter", serif;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 5rem;
+  color: #fff;
 }
