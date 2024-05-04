@@ -345,7 +345,7 @@ input[type="color"],
   visibility: hidden;
   position: absolute;
   left: -40px;
-  background-color: #fff;
+  background-color: #45586c;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   z-index: 20;
   min-width: 220px;
@@ -387,7 +387,7 @@ input[type="color"],
 }
 
 #mainnav ul.sub-menu li a {
-  color: #1a2730;
+  color: #fff;
   font-size: 20px;
   font-family: "Cormorant Upright", serif;
 }
