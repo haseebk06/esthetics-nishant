@@ -1905,8 +1905,9 @@ button:active {
   font-family: "Cormorant Upright", serif;
   font-size: 20px;
   text-transform: capitalize;
-  color: #1a2730;
+  color: #fff;
   border-top: 1px solid rgba(24, 24, 24, 0.07);
+  border-bottom: 2px solid !important;
   line-height: 30px;
   margin-left: 2px;
   padding: 22px 0 20px 0;
@@ -1917,13 +1918,13 @@ button:active {
 .widget-accordion .accordion-heading:first-child {
   border: none;
 }
-
+/* 
 .widget-accordion .accordion-heading-1:hover,
 .widget-accordion .active.accordion-heading-1,
 .widget-accordion .accordion-heading:hover,
 .widget-accordion .active.accordion-heading {
   color: #45586c;
-}
+} */
 
 .widget-accordion .accordion-heading-1 i,
 .widget-accordion .accordion-heading i {
@@ -1944,13 +1945,21 @@ button:active {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 30px;
-  color: #666666;
+  color: #fff;
   padding-bottom: 28px;
+  padding-top: 28px;
 }
 
 .widget-accordion .accordion-content-1:last-child,
 .widget-accordion .accordion-content:last-child {
   padding-bottom: 0;
+}
+
+.widget-accordion h2 {
+  font-size: 37px;
+  font-family: "Cormorant Upright", serif;
+  padding-bottom: 3rem;
+  color: #fff;
 }
 
 /* widget-gg-map */

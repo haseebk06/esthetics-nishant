@@ -858,6 +858,8 @@ input[type="color"],
 /* ------------------------------- */
 .main-content {
   padding-top: 120px;
+  padding-bottom: 50px;
+  background: #424048;
 }
 
 .blog.main-content .blog-wrap {
@@ -1794,13 +1796,13 @@ fieldset {
 /* page-title-home */
 /* ------------------------------------------ */
 .page-title-home {
-  height: 849px;
+  height: 90dvh;
 }
 
 .page-title-home .swiper-slide-1 {
-  background-image: url(../images/page-title/home-1.jpg);
+  background-image: url(../images/page-title/IMG_0727.JPG) !important;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1808,7 +1810,7 @@ fieldset {
 }
 
 .page-title-home .swiper-slide-2 {
-  background-image: url(../images/page-title/home-2.jpg);
+  background-image: url(../images/page-title/IMG_0722.JPG) !important;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1844,7 +1846,7 @@ fieldset {
 
 .page-title-home .swiper-slide .page-title-container h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 72px;
+  font-size: 48px;
   line-height: 72px;
   text-transform: capitalize;
   color: #fff;
@@ -2015,16 +2017,11 @@ fieldset {
   margin-bottom: 120px;
 }
 
-/* home-2 */
-/* ------------------------------------ */
-/* page-header */
-.home-2.page-header {
-  padding-top: 153px;
-}
 /* page-title */
 .home-2 .page-title-home .swiper-slide {
-  background-image: url(../images/page-title/home-2.jpg);
+  background-image: url(../images/page-title/IMG_1776.JPG);
   text-align: start;
+  background-position: right top;
 }
 
 .home-2 .page-title-home .swiper-slide .page-title-container {
@@ -2686,7 +2683,7 @@ fieldset {
 
 .faq .faq-content .faq-title h2 {
   text-transform: capitalize;
-  color: #1a2730;
+  color: #fff;
   font-family: "Cormorant Upright", serif;
   font-size: 48px;
   line-height: 58px;
@@ -2888,4 +2885,32 @@ fieldset {
   text-align: left;
   padding: 0 5rem;
   color: #fff;
+}
+
+.about {
+  background-image: url("../images/image-2.JPG");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.about h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 38px;
+  text-align: left;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.about p {
+  font-family: "Inter", serif;
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  line-height: 4rem;
 }
