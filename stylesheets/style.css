@@ -798,8 +798,8 @@ input[type="color"],
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
-  padding-top: 125px;
-  padding-bottom: 125px;
+  padding-top: clamp(5rem, 1.7857rem + 10.7143vw, 7.8125rem);
+  padding-bottom: clamp(5rem, 1.7857rem + 10.7143vw, 7.8125rem);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -816,7 +816,6 @@ input[type="color"],
   height: 200px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .page-title .page-title-heading {
@@ -1107,7 +1106,7 @@ input[type="color"],
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 30px;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 10px;
 }
 
 .footer-bottom .credits p {
@@ -1846,8 +1845,8 @@ fieldset {
 
 .page-title-home .swiper-slide .page-title-container h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
+  line-height: 52px;
   text-transform: capitalize;
   color: #fff;
   max-width: 700px;
@@ -2770,7 +2769,7 @@ fieldset {
 
 .contact-us .contact-us-title h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   line-height: 58px;
   text-transform: capitalize;
   color: #fff;
@@ -2873,17 +2872,17 @@ fieldset {
 
 .counselling h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 62px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   text-align: left;
-  padding: 0 5rem;
+  padding: 0 clamp(2rem, -1.4286rem + 11.4286vw, 5rem);
   color: #fff;
 }
 
 .counselling p {
   font-family: "Inter", serif;
-  font-size: 18px;
+  font-size: clamp(1rem, 0.7143rem + 0.9524vw, 1.8rem);
   text-align: left;
-  padding: 0 5rem;
+  padding: 0 clamp(2rem, -1.4286rem + 11.4286vw, 5rem);
   color: #fff;
 }
 
