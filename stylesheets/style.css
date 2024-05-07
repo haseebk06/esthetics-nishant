@@ -1800,7 +1800,7 @@ fieldset {
 }
 
 .page-title-home .swiper-slide-1 {
-  background-image: url(../images/page-title/IMG_1776.JPG) !important;
+  background-image: url(../images/page-title/IMG_1776.jpeg) !important;
   background-size: cover;
   background-position: center top;
   text-align: center;
@@ -1810,7 +1810,7 @@ fieldset {
 }
 
 .page-title-home .swiper-slide-2 {
-  background-image: url(../images/page-title/IMG_0727.JPG) !important;
+  background-image: url(../images/page-title/IMG_0727.jpeg) !important;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -2019,7 +2019,7 @@ fieldset {
 
 /* page-title */
 .home-2 .page-title-home .swiper-slide {
-  background-image: url(../images/page-title/IMG_0722.JPG);
+  background-image: url(../images/page-title/IMG_0722.jpeg);
   text-align: start;
   background-position: right top;
 }
@@ -2733,7 +2733,7 @@ fieldset {
 
 .counselling .page-title {
   background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/consultation.jpg');
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/page-title/consultation.jpeg');
   background-position: center top;
   height: 80vh;
 }
@@ -2888,7 +2888,7 @@ fieldset {
 }
 
 .about {
-  background-image: url("../images/image-2.JPG");
+  background-image: url("../images/image-2.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
