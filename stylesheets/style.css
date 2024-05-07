@@ -734,7 +734,7 @@ input[type="color"],
   left: 0px;
   transform: translateX(-100%);
   position: fixed;
-  background-color: #fff;
+  background-color: #1a2730;
   z-index: 999999;
   overflow-y: auto;
   transition-duration: 0.5s;
@@ -764,7 +764,7 @@ input[type="color"],
   height: auto;
   padding: 12px 50px 12px 25px;
   text-align: left;
-  color: #191919;
+  color: #fff;
 }
 
 #mainnav_canvas > ul.menu > li:hover > a,
