@@ -499,7 +499,7 @@
     .footer-bottom .container .row > div > div,
     .footer-bottom form {
         justify-content: center;
-        margin: 20px auto;
+        margin: auto;
     }
     .footer-bottom .text {
         width: auto;

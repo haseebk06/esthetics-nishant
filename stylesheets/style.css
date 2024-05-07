@@ -512,6 +512,7 @@ input[type="color"],
 
 #header-mobile .btn-menu img {
   width: 40px;
+  filter: grayscale(1) invert(1);
 }
 
 /* header-social */
@@ -690,7 +691,7 @@ input[type="color"],
 }
 
 .header-mobile .inner-header {
-  background: #fff;
+  background: #1a2730;
   padding: 15px;
   box-shadow: 0px 3px 6px rgb(0 0 0 / 6%);
 }
@@ -1799,7 +1800,7 @@ fieldset {
 }
 
 .page-title-home .swiper-slide-1 {
-  background-image: url(../images/page-title/IMG_0727.JPG) !important;
+  background-image: url(../images/page-title/IMG_1776.JPG) !important;
   background-size: cover;
   background-position: center top;
   text-align: center;
@@ -1809,7 +1810,7 @@ fieldset {
 }
 
 .page-title-home .swiper-slide-2 {
-  background-image: url(../images/page-title/IMG_0722.JPG) !important;
+  background-image: url(../images/page-title/IMG_0727.JPG) !important;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -2018,7 +2019,7 @@ fieldset {
 
 /* page-title */
 .home-2 .page-title-home .swiper-slide {
-  background-image: url(../images/page-title/IMG_1776.JPG);
+  background-image: url(../images/page-title/IMG_0722.JPG);
   text-align: start;
   background-position: right top;
 }
