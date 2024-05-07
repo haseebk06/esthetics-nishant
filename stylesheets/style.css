@@ -512,6 +512,7 @@ input[type="color"],
 
 #header-mobile .btn-menu img {
   width: 40px;
+  filter: grayscale(1) invert(1);
 }
 
 /* header-social */
@@ -690,7 +691,7 @@ input[type="color"],
 }
 
 .header-mobile .inner-header {
-  background: #fff;
+  background: #1a2730;
   padding: 15px;
   box-shadow: 0px 3px 6px rgb(0 0 0 / 6%);
 }
