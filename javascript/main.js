@@ -39,10 +39,10 @@
       $(this).closest('#header').find('.canvas-nav-wrap').toggleClass('active');
     });
 
-    $('.menu-item').click(() => {
-      console.log("clicked")
-      $(this).addClass('current-menut-item')
-    })
+    $('.menu-item').click(function() {
+      $(this).closest('#header').find('.current-menu-item').removeClass('current-menu-item');
+      $(this).closest('.menu-item').addClass('current-menu-item');
+  });  
 
     
     $(document).on('click', '#mainnav_canvas li.menu-item-has-children', function (e) {
