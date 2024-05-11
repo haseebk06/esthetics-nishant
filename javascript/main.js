@@ -39,6 +39,11 @@
       $(this).closest('#header').find('.canvas-nav-wrap').toggleClass('active');
     });
 
+    $('.menu-item').click(() => {
+      console.log("clicked")
+      $(this).addClass('current-menut-item')
+    })
+
     
     $(document).on('click', '#mainnav_canvas li.menu-item-has-children', function (e) {
       $(this).toggleClass('active').next('ul').slideToggle(1000);
