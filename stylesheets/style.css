@@ -799,8 +799,8 @@ input[type="color"],
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
-  padding-top: clamp(5rem, 1.7857rem + 10.7143vw, 7.8125rem);
-  padding-bottom: clamp(5rem, 1.7857rem + 10.7143vw, 7.8125rem);
+  padding-top: clamp(15rem, 9.2857rem + 19.0476vw, 20rem);
+  padding-bottom: clamp(5rem, -0.7143rem + 19.0476vw, 10rem);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -859,7 +859,7 @@ input[type="color"],
 .main-content {
   padding-top: 120px;
   padding-bottom: 50px;
-  background: #424048;
+  background: #0d0d0d;
 }
 
 .blog.main-content .blog-wrap {
