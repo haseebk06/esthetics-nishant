@@ -69,6 +69,9 @@
     .page-title-home.swiper .swiper-pagination {
         bottom: 5px;
     }
+    .about {
+        height: 100%;
+      }
 }
 
 @media (max-width:416px) {
