@@ -2914,3 +2914,10 @@ fieldset {
   color: #fff;
   line-height: 4rem;
 }
+
+.divider {
+  width: 100px;
+  height: 3px;
+  background: #e95d2c;
+  margin: 2.5rem 0;
+}
