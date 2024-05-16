@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout - Esthetics Nishant</title>
+
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="stylesheet" href="fonts/css2.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+  </head>
+  <body>
+    <div class="container checkout">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="title">Esthetics Nishant Fitness</h1>
+          <div class="divder"></div>
+          <div class="flex">
+            <h4 class="item-name"></h4>
+            <h4 class="item-price">CA&dollar;</h4>
+          </div>
+          <div class="divder"></div>
+          <div class="flex">
+            <h4 class="subtotal">Total</h4>
+            <h2 class="total-price">CA&dollar;</h2>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-6">
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="first-name" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="last-name" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <button id="paypayl"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AaamXmLEfbhlMrLzxGz3MgZub-9mRyLSClksFfQc-YqTEoPPfl1ClKe-aQU-4f7N6BGvIfJtYJnG9WCI"></script> -->
+
+    <script src="javascript/jquery.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const price = urlParams.get("p") || "NaN";
+        const title = urlParams.get("title") || "Please Select One from the service Pages";
+
+        $(".item-name").append(" " + title);
+        $(".item-price").append(" " + price);
+        $(".total-price").append(" " + price);
+      });
+
+        // paypal.Buttons({
+        //     createOrder: function (data, actions) {
+        //       //This function sets up the details and line item details
+        //       return actions.order.create({
+        //         purchase_units: [
+        //           {
+        //             amount: {
+        //               value: price,
+        //             },
+        //           },
+        //         ],
+        //       });
+        //     },
+        //   })
+        //   .render("#paypal");
+    </script>
+  </body>
+</html>

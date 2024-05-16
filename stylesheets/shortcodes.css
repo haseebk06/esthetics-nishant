@@ -28,7 +28,8 @@ button:active {
   line-height: 20px;
   border: 1px solid #1a2730;
   border-radius: 50px;
-  padding: clamp(0.625rem, -0.0893rem + 2.381vw, 1.5rem) clamp(1.25rem, 0.5357rem + 2.381vw, 1.875rem);
+  padding: clamp(0.625rem, -0.0893rem + 2.381vw, 1.5rem)
+    clamp(1.25rem, 0.5357rem + 2.381vw, 1.875rem);
   background-color: #fff;
   transition: ease-out 0.3s;
   color: #1a2730;
@@ -2031,8 +2032,8 @@ button:active {
   font-family: "Cormorant Upright", serif;
 }
 
-.info h2{
-    font-size: 20px;
+.info h2 {
+  font-size: 20px;
 }
 
 .info {
@@ -2040,19 +2041,58 @@ button:active {
 }
 
 .book {
-    background: #a63e1b;
-    padding: 5rem 0;
-    margin: 5rem auto;
-    border-radius: 2rem;
+  background: #a63e1b;
+  padding: 5rem 0;
+  margin: 5rem auto;
+  border-radius: 2rem;
 }
 
-.book h2, .book h4 {
-    color: #fff;
-    font-family: "Cormorant Upright", serif;
-    text-align: center;
-    margin: 3rem 0;
+.book h2,
+.book h4 {
+  color: #fff;
+  font-family: "Cormorant Upright", serif;
+  text-align: center;
+  margin: 3rem 0;
 }
 
-.main-logo img{
+.main-logo img {
   width: 30% !important;
+}
+
+.checkout {
+  background: #1a2730;
+  border-radius: 10px;
+  margin: 5rem auto;
+}
+
+.checkout .title,
+.checkout h4,
+.checkout h2 {
+  color: #fff;
+  font-family: "Cormorant Upright", serif;
+  margin: 3rem 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divder {
+  width: 100%;
+  height: 2px;
+  background: #a63e1b;
+}
+
+.form {
+  margin: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+
+.form-label {
+  color: #fff;
 }
