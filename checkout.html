@@ -96,7 +96,7 @@
 
               <div class="col-12">
                 <div class="mb-3">
-                  <button id="paypayl"></button>
+                  <div id="paypal"></div>
                 </div>
               </div>
             </div>
@@ -105,36 +105,49 @@
       </div>
     </div>
 
-    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AaamXmLEfbhlMrLzxGz3MgZub-9mRyLSClksFfQc-YqTEoPPfl1ClKe-aQU-4f7N6BGvIfJtYJnG9WCI"></script> -->
-
     <script src="javascript/jquery.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const price = urlParams.get("p") || "NaN";
-        const title = urlParams.get("title") || "Please Select One from the service Pages";
+        const title =
+          urlParams.get("title") || "Please Select One from the service Pages";
 
         $(".item-name").append(" " + title);
         $(".item-price").append(" " + price);
         $(".total-price").append(" " + price);
-      });
 
-        // paypal.Buttons({
-        //     createOrder: function (data, actions) {
-        //       //This function sets up the details and line item details
-        //       return actions.order.create({
-        //         purchase_units: [
-        //           {
-        //             amount: {
-        //               value: price,
-        //             },
-        //           },
-        //         ],
-        //       });
-        //     },
-        //   })
-        //   .render("#paypal");
+        paypal_sdk
+          .Buttons({
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    amount: {
+                      value: price,
+                    },
+                  },
+                ],
+              });
+            },
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (details) {
+                alert(
+                  "Transaction completed by " + details.payer.name.given_name
+                );
+              });
+            },
+            onError: function (err) {
+              console.error("An error occurred during the transaction", err);
+            },
+          })
+          .render("#paypal");
+      });
     </script>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AUNtO48AMO_TapFb2feDjxAa9lQjX1ka0fUz1jgWGNq54zPqk5rEkNZfEsV_tkHw8wML7I2jtPh66bRS"
+      data-namespace="paypal_sdk"
+    ></script>
   </body>
 </html>
