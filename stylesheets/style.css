@@ -2958,10 +2958,10 @@ fieldset {
   gap: 2rem;
 }
 
-body,
+/* body,
 html {
-  /* overflow: hidden; */
-}
+  overflow: hidden;
+} */
 
 .logo-name {
   color: #fff;
@@ -2969,6 +2969,7 @@ html {
   font-family: "Michroma", sans-serif;
   letter-spacing: 12px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #svg {
