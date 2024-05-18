@@ -48,9 +48,18 @@
   </head>
 
   <body class="preloading">
-    <!-- <div id="preload" class="preload-container text-center">
-        <img class="glyphicon preload-icon wow pulse" src="icon/logo.jpeg" alt="image" width="300px">
-    </div> -->
+    <div id="preloader">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M415.4 512h-95.1L212.1 357.5v91.1L125.7 512H28V29.8L68.5 0h108.1l123.7 176.1V63.5L386.7 0h97.7v461.5zM38.8 35.3V496l72-52.9V194l215.5 307.6h84.8l52.4-38.2h-78.3L69 13zm82.5 466.6l80-58.8v-101l-79.8-114.4v220.9L49 501.9h72.3zM80.6 10.8l310.6 442.6h82.4V10.8h-79.8v317.6L170.9 10.8zM311 191.7l72 102.8V15.9l-72 53v122.7z"
+        />
+      </svg>
+
+      <div class="name-container">
+        <div class="logo-name">Esthetics Nishtant</div>
+      </div>
+    </div>
+
     <header id="header" class="header header-default">
       <div id="sticky-area-wrap">
         <div class="inner-header">
@@ -726,9 +735,18 @@
                 <li>NASM Corrective Exercise Specialist</li>
                 <li>TRX Suspension Training</li>
                 <li>TRX Functional Training</li>
-                <li>International Kettlebell and Fitness Federation Workshop Level 1</li>
-                <li>GFA First Aid Techniques in Exercise & Sports Injuries Management</li>
-                <li>BICP Advanced Physique Transformation Expert Master Trainer Level 1</li>
+                <li>
+                  International Kettlebell and Fitness Federation Workshop Level
+                  1
+                </li>
+                <li>
+                  GFA First Aid Techniques in Exercise & Sports Injuries
+                  Management
+                </li>
+                <li>
+                  BICP Advanced Physique Transformation Expert Master Trainer
+                  Level 1
+                </li>
                 <li>CPR & AED Certified</li>
               </ul>
             </div>
@@ -1158,7 +1176,9 @@
               <div class="content">
                 <h4>Customised regimen</h4>
                 <p>
-                  Experience tailored fitness with our custom regimen. Designed just for you, Nishant’s personalized programs maximize results, ensuring every workout counts.
+                  Experience tailored fitness with our custom regimen. Designed
+                  just for you, Nishant’s personalized programs maximize
+                  results, ensuring every workout counts.
                 </p>
                 <a class="widget-button" href="contact-us.html"
                   ><i class="icon-arrow-right"></i
@@ -1172,7 +1192,9 @@
               <div class="content">
                 <h4>Performance Monitoring</h4>
                 <p>
-                  Stay on top of your progress with Nishant’s performance monitoring. With detailed insights and feedback, we'll help you reach new heights and achieve your personal best.
+                  Stay on top of your progress with Nishant’s performance
+                  monitoring. With detailed insights and feedback, we'll help
+                  you reach new heights and achieve your personal best.
                 </p>
                 <a class="widget-button" href="contact-us.html"
                   ><i class="icon-arrow-right"></i
@@ -1343,11 +1365,40 @@
 
     <script src="javascript/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <script src="javascript/countto.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/wow.min.js"></script>
     <script src="javascript/isotope.pkgd.min.js"></script>
     <script src="javascript/main.js"></script>
+
+    <script>
+      // use a script tag or an external JS file
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const lenis = new Lenis({
+          lerp: 0.1,
+          smooth: true,
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        gsap.registerPlugin(ScrollTrigger);
+        const tl = gsap.timeline();
+
+        tl.to($("#preloader"), {
+          yPercent: -100,
+          ease: Power3.easeIn,
+          delay: 1.5,
+        });
+      });
+    </script>
   </body>
 </html>

@@ -728,7 +728,7 @@ input[type="color"],
 }
 
 .canvas-nav-wrap .inner-canvas-nav {
-  width: 320px;
+  width: 70%;
   height: 100%;
   top: 0;
   left: 0px;
@@ -2943,4 +2943,83 @@ fieldset {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding-bottom: 3rem;
+}
+
+#preloader {
+  background: #1a2730;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+body,
+html {
+  /* overflow: hidden; */
+}
+
+.logo-name {
+  color: #fff;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
+  font-family: "Michroma", sans-serif;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+#svg {
+  width: 300px;
+  stroke: #fff;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  stroke-dashoffset: 4500;
+  animation: draw 5s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  background: #fff;
+  width: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a63e1b;
+  border-radius: 50px;
+  width: 10px;
+}
+
+::selection {
+  background: #45586c;
+  color: #1a2730;
 }

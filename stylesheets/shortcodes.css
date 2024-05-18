@@ -558,7 +558,7 @@ button:active {
   text-transform: capitalize;
   color: #fff;
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   line-height: 58px;
   max-width: 900px;
   margin: auto;
@@ -760,7 +760,7 @@ button:active {
   text-transform: capitalize;
   color: #1a2730;
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   letter-spacing: 0.027em;
   line-height: 58px;
   max-width: 955px;
@@ -1082,7 +1082,7 @@ button:active {
 
 .widget-blog-slide .heading h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   color: #fff;
   font-weight: 700;
   line-height: 58px;
@@ -1483,7 +1483,7 @@ button:active {
 
 .widget-pricing-table .pricing-heading h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   line-height: 58px;
   text-align: center;
   text-transform: capitalize;
@@ -1585,7 +1585,7 @@ button:active {
 
 .widget-testimonials .heading h2 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   text-transform: capitalize;
   color: #1a2730;
   margin: 0;
@@ -1694,7 +1694,7 @@ button:active {
 
 .widget-adv-video .gallery-slider .swiper-slide .tf-heading h3 {
   font-family: "Cormorant Upright", serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   line-height: 58px;
   text-transform: capitalize;
   color: #ffffff;

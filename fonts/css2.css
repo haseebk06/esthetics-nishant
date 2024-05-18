@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./Sora/Sora-Medium.ttf);
+  src: url("./Sora/Sora-Medium.ttf");
 }
 /* latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./Lora/Lora-Bold.ttf);
+  src: url("./Lora/Lora-Bold.ttf");
 }
 /* cyrillic */
 @font-face {
@@ -20,5 +20,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./Sora/Sora-Regular.ttf);
+  src: url("./Sora/Sora-Regular.ttf");
 }
+
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Michroma/Michroma-Regular.ttf");
+}
+
+
