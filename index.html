@@ -1376,29 +1376,21 @@
     <script src="javascript/main.js"></script>
 
     <script>
-      // use a script tag or an external JS file
-      document.addEventListener("DOMContentLoaded", (event) => {
-        const lenis = new Lenis({
-          lerp: 0.1,
-          smooth: true,
-        });
+      gsap.registerPlugin(ScrollTrigger);
 
-        function raf(time) {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-
-        gsap.registerPlugin(ScrollTrigger);
-        const tl = gsap.timeline();
-
-        tl.to($("#preloader"), {
-          yPercent: -100,
-          ease: Power3.easeIn,
-          delay: 1.5,
-        });
+      gsap.to($("#preloader"), {
+        yPercent: -100,
+        ease: Power3.easeIn,
+        delay: 1.5,
       });
+
+      gsap.to($(".logo-name"), {
+        y: 0,
+        opacity: 1,
+        ease: Power3.easOut,
+        duration: 1,
+        delay: .8
+      })
     </script>
   </body>
 </html>

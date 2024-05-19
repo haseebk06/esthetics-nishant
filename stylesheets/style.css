@@ -2967,9 +2967,11 @@ html {
   color: #fff;
   font-size: clamp(1.5rem, -0.5rem + 6.6667vw, 3.25rem);
   font-family: "Michroma", sans-serif;
-  letter-spacing: 12px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
 }
 
 #svg {

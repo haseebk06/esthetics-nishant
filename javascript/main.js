@@ -320,5 +320,19 @@
     s1.setAttribute("crossorigin", "*");
     s0.parentNode.insertBefore(s1, s0);
   })();
-  
+
+  // use a script tag or an external JS file
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smooth: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
 })(jQuery);
