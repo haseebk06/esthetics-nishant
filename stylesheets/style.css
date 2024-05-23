@@ -2981,7 +2981,7 @@ html {
   stroke-width: 3px;
   stroke-dasharray: 4500;
   stroke-dashoffset: 4500;
-  animation: draw 5s ease forwards;
+  animation: draw 8s ease forwards;
 }
 
 @keyframes draw {
