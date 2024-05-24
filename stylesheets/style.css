@@ -2708,7 +2708,7 @@ fieldset {
 /* ---------------------------------------------- */
 /* page-title */
 .contact-us .page-title {
-  background-image: url(../images/page-title/contact-us.jpg);
+  background-image: url("../images/page-title/contact.png");
 }
 
 .personal-training .page-title {
